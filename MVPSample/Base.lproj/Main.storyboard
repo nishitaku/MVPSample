@@ -15,16 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-ed-HN7">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="KRg-EG-TaO" kind="show" id="UNS-MG-qNT"/>
-                                </connections>
-                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ApR-Oy-UMe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rvc-vj-j5A">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rvc-vj-j5A" firstAttribute="leading" secondItem="2tO-Mz-Gzm" secondAttribute="leading" id="0Ls-Ik-IGf"/>
+                            <constraint firstItem="2tO-Mz-Gzm" firstAttribute="trailing" secondItem="rvc-vj-j5A" secondAttribute="trailing" id="9Pt-ML-R6h"/>
+                            <constraint firstItem="ApR-Oy-UMe" firstAttribute="top" secondItem="2tO-Mz-Gzm" secondAttribute="top" id="G27-pR-0NL"/>
+                            <constraint firstItem="ApR-Oy-UMe" firstAttribute="trailing" secondItem="2tO-Mz-Gzm" secondAttribute="trailing" id="JHV-qB-C9v"/>
+                            <constraint firstItem="ApR-Oy-UMe" firstAttribute="leading" secondItem="2tO-Mz-Gzm" secondAttribute="leading" id="Kg2-tI-dO5"/>
+                            <constraint firstItem="rvc-vj-j5A" firstAttribute="top" secondItem="ApR-Oy-UMe" secondAttribute="bottom" id="Qom-hc-v3x"/>
+                            <constraint firstItem="2tO-Mz-Gzm" firstAttribute="bottom" secondItem="rvc-vj-j5A" secondAttribute="bottom" id="TKS-ou-Jzv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2tO-Mz-Gzm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search GitHub User" id="BYQ-dF-LDW"/>
