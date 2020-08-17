@@ -14,6 +14,8 @@
 		8C07962824EA42D800C2BE2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C07962624EA42D800C2BE2E /* LaunchScreen.storyboard */; };
 		8C07963124EA4A6E00C2BE2E /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07963024EA4A6E00C2BE2E /* SearchUserViewController.swift */; };
 		8C07963424EA4EA000C2BE2E /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07963324EA4EA000C2BE2E /* UserDetailViewController.swift */; };
+		8C07963D24EA5C5C00C2BE2E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07963B24EA5C5C00C2BE2E /* UserCell.swift */; };
+		8C07963E24EA5C5C00C2BE2E /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C07963C24EA5C5C00C2BE2E /* UserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8C07962924EA42D800C2BE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C07963024EA4A6E00C2BE2E /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		8C07963324EA4EA000C2BE2E /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		8C07963B24EA5C5C00C2BE2E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		8C07963C24EA5C5C00C2BE2E /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				8C07962424EA42D800C2BE2E /* Assets.xcassets */,
 				8C07962624EA42D800C2BE2E /* LaunchScreen.storyboard */,
 				8C07962924EA42D800C2BE2E /* Info.plist */,
+				8C07963B24EA5C5C00C2BE2E /* UserCell.swift */,
+				8C07963C24EA5C5C00C2BE2E /* UserCell.xib */,
 			);
 			path = MVPSample;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C07963E24EA5C5C00C2BE2E /* UserCell.xib in Resources */,
 				8C07962824EA42D800C2BE2E /* LaunchScreen.storyboard in Resources */,
 				8C07962524EA42D800C2BE2E /* Assets.xcassets in Resources */,
 				8C07962324EA42CF00C2BE2E /* Main.storyboard in Resources */,
@@ -160,6 +167,7 @@
 				8C07963124EA4A6E00C2BE2E /* SearchUserViewController.swift in Sources */,
 				8C07961C24EA42CF00C2BE2E /* AppDelegate.swift in Sources */,
 				8C07963424EA4EA000C2BE2E /* UserDetailViewController.swift in Sources */,
+				8C07963D24EA5C5C00C2BE2E /* UserCell.swift in Sources */,
 				8C07961E24EA42CF00C2BE2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
