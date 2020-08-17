@@ -18,6 +18,10 @@
 		8C0796A624EA7B1300C2BE2E /* GitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0796A524EA7B0C00C2BE2E /* GitHub.framework */; };
 		8C0796A824EAAA6100C2BE2E /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0796A724EAAA6100C2BE2E /* SearchUserModel.swift */; };
 		8C0796AA24EAAC1600C2BE2E /* SearchUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0796A924EAAC1600C2BE2E /* SearchUserPresenter.swift */; };
+		8C0796AC24EAC0C700C2BE2E /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0796AB24EAC0C700C2BE2E /* UserDetailModel.swift */; };
+		8C0796AE24EAC0D400C2BE2E /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0796AD24EAC0D400C2BE2E /* UserDetailPresenter.swift */; };
+		8C0796B124EAC49700C2BE2E /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0796AF24EAC49700C2BE2E /* RepositoryCell.swift */; };
+		8C0796B224EAC49700C2BE2E /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0796B024EAC49700C2BE2E /* RepositoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		8C0796A224EA7B0C00C2BE2E /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		8C0796A724EAAA6100C2BE2E /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
 		8C0796A924EAAC1600C2BE2E /* SearchUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserPresenter.swift; sourceTree = "<group>"; };
+		8C0796AB24EAC0C700C2BE2E /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		8C0796AD24EAC0D400C2BE2E /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		8C0796AF24EAC49700C2BE2E /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		8C0796B024EAC49700C2BE2E /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 				8C07962924EA42D800C2BE2E /* Info.plist */,
 				8C07963B24EA5C5C00C2BE2E /* UserCell.swift */,
 				8C07963C24EA5C5C00C2BE2E /* UserCell.xib */,
+				8C0796AF24EAC49700C2BE2E /* RepositoryCell.swift */,
+				8C0796B024EAC49700C2BE2E /* RepositoryCell.xib */,
 			);
 			path = MVPSample;
 			sourceTree = "<group>";
@@ -127,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				8C07963324EA4EA000C2BE2E /* UserDetailViewController.swift */,
+				8C0796AB24EAC0C700C2BE2E /* UserDetailModel.swift */,
+				8C0796AD24EAC0D400C2BE2E /* UserDetailPresenter.swift */,
 			);
 			path = UserDetail;
 			sourceTree = "<group>";
@@ -303,6 +315,7 @@
 				8C07963E24EA5C5C00C2BE2E /* UserCell.xib in Resources */,
 				8C07962824EA42D800C2BE2E /* LaunchScreen.storyboard in Resources */,
 				8C07962524EA42D800C2BE2E /* Assets.xcassets in Resources */,
+				8C0796B224EAC49700C2BE2E /* RepositoryCell.xib in Resources */,
 				8C07962324EA42CF00C2BE2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,11 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0796B124EAC49700C2BE2E /* RepositoryCell.swift in Sources */,
 				8C0796A824EAAA6100C2BE2E /* SearchUserModel.swift in Sources */,
 				8C07963124EA4A6E00C2BE2E /* SearchUserViewController.swift in Sources */,
+				8C0796AC24EAC0C700C2BE2E /* UserDetailModel.swift in Sources */,
 				8C07961C24EA42CF00C2BE2E /* AppDelegate.swift in Sources */,
 				8C0796AA24EAAC1600C2BE2E /* SearchUserPresenter.swift in Sources */,
 				8C07963424EA4EA000C2BE2E /* UserDetailViewController.swift in Sources */,
+				8C0796AE24EAC0D400C2BE2E /* UserDetailPresenter.swift in Sources */,
 				8C07963D24EA5C5C00C2BE2E /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

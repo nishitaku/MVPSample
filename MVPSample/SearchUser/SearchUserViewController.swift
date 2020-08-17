@@ -16,7 +16,6 @@ class SearchUserViewController: UIViewController {
     private var presenter: SearchUserPresenterInput!
     
     func inject(presenter: SearchUserPresenterInput) {
-        print("##SearchUserViewController: inject ")
         self.presenter = presenter
     }
     
@@ -35,7 +34,6 @@ class SearchUserViewController: UIViewController {
 
 extension SearchUserViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("##SearchUserViewController: searchBarSearchButtonClicked")
         presenter.didTapSearchButton(text: searchBar.text)
     }
 }
@@ -68,9 +66,11 @@ extension SearchUserViewController: SearchUserPresenterOutput {
     }
     
     func transitionToUserDetail(userName: String) {
-        let userDetailVC = UIStoryboard(name: "UserDetail", bundle: nil).instantiateInitialViewController() as! UserDetailViewController
+        let userDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController
+        let model = UserDetailModel(userName: userName)
+        let presenter = UserDetailPresenter(userName: userName, view: userDetailVC, model: model)
+        userDetailVC.inject(presenter: presenter)
         
-        
-        
+        navigationController?.pushViewController(userDetailVC, animated: true)
     }
 }
