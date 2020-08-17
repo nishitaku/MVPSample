@@ -7,20 +7,41 @@
 //
 
 import UIKit
+import GitHub
 
 class UserCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    private var task: URLSessionTask?
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        task?.cancel()
+        task = nil
+        imageView?.image = nil
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configure(user: User) {
+        task = {
+            let url = user.avatarURL
+            let task = URLSession.shared.dataTask(with: url) {data, response, error in
+                guard let imageData = data else { return }
+                
+                DispatchQueue.global().async { [weak self] in
+                    guard let image = UIImage(data: imageData) else { return }
+                    
+                    DispatchQueue.main.async {
+                        self?.iconImageView?.image = image
+                        self?.setNeedsLayout()
+                    }
+                }
+            }
+            task.resume()
+            return task
+        }()
+        
+        nameLabel.text = user.login
     }
     
 }
