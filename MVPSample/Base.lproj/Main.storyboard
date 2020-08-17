@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search User View Controller-->
+        <!--Search GitHub User-->
         <scene sceneID="MWb-Ze-rhY">
             <objects>
                 <viewController id="dbF-pO-0k2" customClass="SearchUserViewController" customModule="MVPSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,21 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello World" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmb-NH-Z3c">
-                                <rect key="frame" x="159" y="431" width="103" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-ed-HN7">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KRg-EG-TaO" kind="show" id="UNS-MG-qNT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2tO-Mz-Gzm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BYQ-dF-LDW"/>
+                    <navigationItem key="navigationItem" title="Search GitHub User" id="BYQ-dF-LDW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exw-Xy-Z83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="843.75"/>
+        </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="nKF-In-6Vt">
+            <objects>
+                <viewController id="KRg-EG-TaO" customClass="UserDetailViewController" customModule="MVPSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zf5-6D-VzF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G0B-zn-FNc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iRC-h7-wEh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLN-Tx-WuM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l2X-2f-ZPF">
